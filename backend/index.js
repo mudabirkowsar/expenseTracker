@@ -6,15 +6,15 @@ const bcrypt = require("bcrypt")
 const jwt = require("jsonwebtoken");
 const bodyParser = require("body-parser")
 const cookieParser = require("cookie-parser");
-const authMiddleware = require("../config/authMiddleware.js");
+const authMiddleware = require("./config/authMiddleware.js");
 const OpenAI = require("openai")
 require('dotenv').config()
-const chatbotData = require("../extra/data.js");
+const chatbotData = require("./extra/data.js");
 
 
 //Models 
-const User = require("../models/UserModel.js")
-const Product = require("../models/ProductModel.js")
+const User = require("./models/UserModel.js")
+const Product = require("./models/ProductModel.js")
 
 
 app.use(cors());
