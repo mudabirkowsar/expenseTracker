@@ -1,0 +1,47 @@
+
+.mainBody{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  
+  .login-page-container {
+    text-align: center;
+    background: #ffffff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Message Box Heading */
+  .login-message-box .login-heading {
+    color: #ff5e57;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Message Box Description */
+  .login-message-box .login-description {
+    color: #555;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Login Button */
+  .login-message-box .login-button {
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-message-box .login-button:hover {
+    background-color: #0056b3;
+  }

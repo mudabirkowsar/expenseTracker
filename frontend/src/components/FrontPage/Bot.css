@@ -1,0 +1,255 @@
+
+/* Main Front End Page CSS  */
+.mainFrontPage{
+    z-index: -1;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    /* background-color: #f8f9fa; */
+    background-image: url("https://images.unsplash.com/photo-1565514158740-064f34bd6cfd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-color: transparent;
+}
+.chatBotMainContainer {
+  position: fixed;
+  right: 120px;
+  top: 170px;
+  height: 500px;
+  width: 400px;
+  z-index: 200;
+  opacity: 0; /* Initially invisible */
+  transform: scale(0.8); /* Initially scaled down */
+  animation: bounceIn 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards; /* Apply bounce animation */
+}
+
+/* Define the keyframes for the animation */
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8); /* Scale down initially */
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.1); /* Scale up slightly */
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1); /* End at normal size */
+  }
+}
+
+
+.chatBotMainButton{
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  /* border: 2px solid black; */
+  /* background-color: black; */
+  cursor: pointer;
+  z-index: 2000;
+}
+
+.botImage{
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+}
+
+.closeChatBox{
+  text-align: right;
+  /* padding: 20px; */
+  padding-right: 20px;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.chat-container {
+    /* max-width: 400px; */
+    margin: 0px auto;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    /* height: auto; */
+    /* width: auto; */
+  }
+  
+  .chath2 {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .chat-window {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+  }
+  
+  .message {
+    margin: 10px 0;
+  }
+  
+  .message.user {
+    text-align: right;
+  }
+  
+  .message.user .bubble {
+    background: #4caf50;
+    color: white;
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 10px;
+    max-width: 70%;
+  }
+  
+  .message.bot {
+    text-align: left;
+  }
+  
+  .message.bot .bubble {
+    background: #eeeeee;
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 10px;
+    max-width: 70%;
+  }
+  
+  .chat-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #dddddd;
+    background-color: #ffffff;
+  }
+  
+  .chat-input input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 20px;
+    outline: none;
+  }
+  
+  .chat-input button {
+    margin-left: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .chat-input button:hover {
+    background-color: #45a049;
+  }
+
+
+  /* Responsive CSS for Tablets */
+@media (max-width: 768px) {
+    .mainFrontPage {
+        height: 80vh; /* Adjust height for tablets */
+        background-size: cover; /* Ensure background fits the container */
+        background-position: center; /* Center align the background image */
+    }
+
+    .chatBotMainContainer {
+        right: 40px; /* Move chatbot closer to the edge */
+        top: 120px; /* Adjust vertical position */
+        height: 400px; /* Reduce height for tablets */
+        width: 300px; /* Reduce width for tablets */
+    }
+
+    .chatBotMainButton {
+        right: 20px; /* Adjust position */
+        bottom: 30px; /* Adjust position */
+        height: 45px; /* Scale down size */
+        width: 45px;
+    }
+
+    .chat-container {
+        height: 400px; /* Adjust height */
+    }
+
+    .chat-input input {
+        padding: 8px; /* Reduce padding for smaller screens */
+    }
+
+    .chat-input button {
+        padding: 8px 12px; /* Adjust button size */
+    }
+
+    .message .bubble {
+        font-size: 14px; /* Reduce font size in chat bubbles */
+        padding: 6px 10px; /* Adjust padding */
+    }
+}
+
+/* Responsive CSS for Mobile Devices */
+@media (max-width: 480px) {
+    .mainFrontPage {
+        height: 100vh; /* Further reduce height for mobile */
+        background-size: cover;
+        background-position: center;
+    }
+
+    .chatBotMainContainer {
+        right: 50px; /* Align to the edge */
+        top: 180px; /* Adjust top position */
+        height: 300px; /* Smaller container size for mobile */
+        width: 250px; /* Smaller width for mobile */
+    }
+
+    .chatBotMainButton {
+        right: 15px; /* Adjust button position */
+        bottom: 20px;
+        height: 40px; /* Reduce size */
+        width: 40px;
+    }
+
+    .chat-container {
+        height: 400px; /* Smaller chat container for mobile */
+    }
+
+    .chath2 {
+        font-size: 16px; /* Adjust header font size */
+        padding: 8px; /* Reduce padding */
+    }
+
+    .chat-window {
+        padding: 8px; /* Reduce padding */
+    }
+
+    .message .bubble {
+        font-size: 12px; /* Further reduce font size in chat bubbles */
+        padding: 6px 8px; /* Adjust padding */
+        max-width: 90%; /* Allow more space for bubbles */
+    }
+
+    .chat-input {
+        flex-direction: column; /* Stack input and button vertically */
+        gap: 8px; /* Add space between input and button */
+    }
+
+    .chat-input input {
+        padding: 6px; /* Reduce padding for input */
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .chat-input button {
+        padding: 8px 10px; /* Adjust button size */
+        font-size: 14px; /* Adjust font size */
+    }
+}
