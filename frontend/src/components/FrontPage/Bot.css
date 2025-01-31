@@ -195,6 +195,13 @@
         font-size: 14px; /* Reduce font size in chat bubbles */
         padding: 6px 10px; /* Adjust padding */
     }
+    .closeChatBox{
+      text-align: right;
+      /* padding: 20px; */
+      padding-right: 20px;
+      padding-top: 10px;
+      cursor: pointer;
+    }
 }
 
 /* Responsive CSS for Mobile Devices */
@@ -206,21 +213,21 @@
     }
 
     .chatBotMainContainer {
-        right: 50px; /* Align to the edge */
-        top: 180px; /* Adjust top position */
-        height: 300px; /* Smaller container size for mobile */
-        width: 250px; /* Smaller width for mobile */
+        right: 50px; 
+        top: 180px; 
+        height: 350px;
+        width: 300px;
     }
 
     .chatBotMainButton {
-        right: 15px; /* Adjust button position */
+        right: 15px;
         bottom: 20px;
-        height: 40px; /* Reduce size */
+        height: 40px;
         width: 40px;
     }
 
     .chat-container {
-        height: 400px; /* Smaller chat container for mobile */
+        height: 400px;
     }
 
     .chath2 {
@@ -233,23 +240,35 @@
     }
 
     .message .bubble {
-        font-size: 12px; /* Further reduce font size in chat bubbles */
-        padding: 6px 8px; /* Adjust padding */
-        max-width: 90%; /* Allow more space for bubbles */
+        font-size: 12px;
+        padding: 6px 8px; 
+        max-width: 90%;
     }
 
     .chat-input {
-        flex-direction: column; /* Stack input and button vertically */
-        gap: 8px; /* Add space between input and button */
+        flex-direction: column; 
+        gap: 8px;
     }
 
     .chat-input input {
-        padding: 6px; /* Reduce padding for input */
-        font-size: 14px; /* Adjust font size */
+      display: flex;
+      margin-left: 0px;
+        padding: 6px;
+        font-size: 14px;
     }
 
     .chat-input button {
-        padding: 8px 10px; /* Adjust button size */
-        font-size: 14px; /* Adjust font size */
+        padding: 8px 10px;
+        font-size: 14px; 
+        margin-right: 10px;
+        margin-left: 0px;
+    }
+    .closeChatBox{
+      text-align: right;
+      /* padding: 20px; */
+      padding-right: 20px;
+      padding-top: 10px;
+      font-size: 12px;
+      cursor: pointer;
     }
 }
