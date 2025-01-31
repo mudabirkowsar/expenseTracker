@@ -1,4 +1,4 @@
-const backendDomain = "https://expensetracker-96z6.onrender.com";
+const backendDomain = "https://expensetracker-wvbu.onrender.com";
 
 const SummaryApi = {
     SingupUser : {
