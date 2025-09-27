@@ -4,17 +4,17 @@ import { useState } from "react";
 import axios from "axios";
 import SummaryApi from '../../common';
 import "./MainFrontEnd.css"
-import "./Bot.css"
+// import "./Bot.css"
 
 function MainFrontPage() {
     const [messages, setMessages] = useState([]);
     const [userInput, setUserInput] = useState("");
     const [openChat, setOpenChat] = useState(false);
 
-    const openChatFunction = ()=>{
+    const openChatFunction = () => {
         setOpenChat(true)
     }
-    const closeChatFunction = ()=> {
+    const closeChatFunction = () => {
         setOpenChat(false)
     }
 

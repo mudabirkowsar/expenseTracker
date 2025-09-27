@@ -14,7 +14,7 @@ function Dashboard() {
   useEffect(() => {
     const token = sessionStorage.getItem("user");
     if (!token) {
-      nav('/loginNow'); // Redirect if no token
+      nav('/login'); // Redirect if no token
     }
   }, [nav]);
 

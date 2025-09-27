@@ -40,23 +40,27 @@
 /* Tablet Responsiveness */
 @media (max-width: 768px) {
     .secondMainDiv {
-        flex-direction: column; /* Stack the content vertically */
+        flex-direction: column;
+        /* Stack the content vertically */
         padding: 0px 20px;
     }
 
-    .secondMainDivLeft, 
+    .secondMainDivLeft,
     .secondMainDivRight {
-        width: 100%; /* Take full width */
+        width: 100%;
+        /* Take full width */
     }
 
     .secondMainDivRight {
-        align-items: center; /* Center content on tablets */
+        align-items: center;
+        /* Center content on tablets */
         text-align: center;
         padding-right: 0;
     }
 
     .secondMainDivRight h1 {
-        font-size: 22px; /* Adjust font size for tablets */
+        font-size: 22px;
+        /* Adjust font size for tablets */
     }
 
     .secondMainDivRight h2 {
@@ -69,29 +73,36 @@
 
     .imageMoney {
         height: 200px;
-        width: 200px; /* Adjust image size for tablets */
+        width: 200px;
+        /* Adjust image size for tablets */
     }
-    .p{
+
+    .p {
         font-size: 18px;
         padding: 0px 20px;
     }
-    .expensesBtn{
+
+    .expensesBtn {
         height: 35px;
         width: 50%;
         font-size: 17px;
         padding: 10px;
     }
-    .footerContent h3{
+
+    .footerContent h3 {
         font-size: 17px;
         font-weight: light;
     }
-    .designedAndDeveloped{
+
+    .designedAndDeveloped {
         font-style: 17px;
     }
-    .iconLinks i{
+
+    .iconLinks i {
         font-size: 22px;
     }
-    .getStartedBtn{
+
+    .getStartedBtn {
         /* height: 20px; */
         height: 35;
         padding: 10px;
@@ -104,17 +115,20 @@
 /* Mobile Responsiveness */
 @media (max-width: 480px) {
     .secondMainDiv {
-        height: auto; /* Let content determine height */
+        height: auto;
+        /* Let content determine height */
         padding: 0px 10px;
     }
 
     .secondMainDivRight {
-        align-items: center; /* Center-align text */
+        align-items: center;
+        /* Center-align text */
         text-align: center;
     }
 
     .secondMainDivRight h1 {
-        font-size: 16px; /* Reduce font size for mobile */
+        font-size: 16px;
+        /* Reduce font size for mobile */
     }
 
     .secondMainDivRight h2 {
@@ -127,9 +141,11 @@
 
     .imageMoney {
         height: 150px;
-        width: 150px; /* Further reduce image size for mobile */
+        width: 150px;
+        /* Further reduce image size for mobile */
     }
-    .getStartedBtn{
+
+    .getStartedBtn {
         /* height: 20px; */
         height: 35;
         padding: 10px;
@@ -144,7 +160,7 @@
 
 
 
-.textDiv{
+.textDiv {
     flex-direction: column;
     background-color: transparent;
     height: 300px;
@@ -155,21 +171,21 @@
 
 }
 
-.mainFrontTools{
+.mainFrontTools {
     background-color: transparent;
 }
 
-.h1tool{
+.h1tool {
     font-size: 45px;
     letter-spacing: 7px;
     margin-bottom: 20px;
 }
 
-.paratool{
+.paratool {
     font-size: 30px;
 }
 
-.mainButtonDiv{
+.mainButtonDiv {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -178,10 +194,11 @@
     gap: 30px;
 }
 
-.addMoreBtn{
+.addMoreBtn {
     /* height: 30px; */
     width: 300px;
-    padding: 15px;;
+    padding: 15px;
+    ;
     border-radius: 15px;
     font-size: 22px;
     /* border: 1px solid rgb(122, 122, 122); */
@@ -192,33 +209,35 @@
     background-color: #007bff;
     color: white;
 }
-.addMoreBtn:hover{
+
+.addMoreBtn:hover {
     background-color: transparent;
     color: black;
 }
 
-.trackBtn{
+.trackBtn {
     /* height: 30px; */
     width: 500px;
-    padding: 15px;;
+    padding: 15px;
+    ;
     border-radius: 10px;
     font-size: 22px;
     border: 1px solid #007bff;
     border-radius: 15px;
     text-decoration: none;
-    color: black; 
+    color: black;
     transition: 0.5s;
     background-color: transparent;
     background-color: #007bff;
     color: white;
 }
 
-.trackBtn:hover{
+.trackBtn:hover {
     background-color: transparent;
     color: black;
 }
 
-.faltuDiv{
+.faltuDiv {
     height: 200px;
     width: 200px;
     border-radius: 100px;
@@ -235,86 +254,413 @@
 /* Tablet Responsiveness */
 @media (max-width: 768px) {
     .textDiv {
-        height: auto; /* Allow height to adjust dynamically */
-        width: 100%; /* Use full width for smaller screens */
+        height: auto;
+        /* Allow height to adjust dynamically */
+        width: 100%;
+        /* Use full width for smaller screens */
         padding: 20px;
-        position: relative; /* Adjust for better positioning */
+        position: relative;
+        /* Adjust for better positioning */
     }
 
     .h1tool {
-        font-size: 35px; /* Reduce font size for tablets */
+        font-size: 35px;
+        /* Reduce font size for tablets */
         letter-spacing: 5px;
     }
 
     .paratool {
-        font-size: 24px; /* Adjust paragraph font size */
+        font-size: 24px;
+        /* Adjust paragraph font size */
     }
 
     .mainButtonDiv {
-        flex-direction: column; /* Stack buttons vertically */
-        gap: 20px; /* Adjust spacing between buttons */
+        flex-direction: column;
+        /* Stack buttons vertically */
+        gap: 20px;
+        /* Adjust spacing between buttons */
     }
 
     .addMoreBtn,
     .trackBtn {
-        width: 100%; /* Buttons span full width */
-        font-size: 18px; /* Slightly smaller font */
-        padding: 12px; /* Adjust padding */
+        width: 100%;
+        /* Buttons span full width */
+        font-size: 18px;
+        /* Slightly smaller font */
+        padding: 12px;
+        /* Adjust padding */
     }
 
     .faltuDiv {
-        height: 150px; /* Scale down the size */
+        height: 150px;
+        /* Scale down the size */
         width: 150px;
         border-radius: 75px;
-        top: -50px; /* Adjust positioning */
+        top: -50px;
+        /* Adjust positioning */
         right: 50px;
     }
 }
 
 /* Mobile Responsiveness */
 @media (max-width: 480px) {
-    
+
     .textDiv {
         height: auto;
         width: 100%;
-        padding: 15px; /* Reduce padding */
-        text-align: center; /* Center-align text for mobile */
+        padding: 15px;
+        /* Reduce padding */
+        text-align: center;
+        /* Center-align text for mobile */
     }
 
     .h1tool {
-        font-size: 28px; /* Further reduce font size */
+        font-size: 28px;
+        /* Further reduce font size */
         letter-spacing: 3px;
     }
 
     .paratool {
-        font-size: 18px; /* Smaller font for better readability */
+        font-size: 18px;
+        /* Smaller font for better readability */
     }
 
     .mainButtonDiv {
-        flex-direction: column; /* Stack buttons */
+        flex-direction: column;
+        /* Stack buttons */
         gap: 15px;
-        margin-top: 30px; /* Reduce top margin */
+        margin-top: 30px;
+        /* Reduce top margin */
     }
 
     .addMoreBtn,
     .trackBtn {
-        width: 100%; /* Full width buttons */
-        font-size: 16px; /* Smaller font for mobile */
+        width: 100%;
+        /* Full width buttons */
+        font-size: 16px;
+        /* Smaller font for mobile */
         padding: 10px;
     }
 
     .faltuDiv {
-        height: 100px; /* Further reduce size */
+        height: 100px;
+        /* Further reduce size */
         width: 100px;
         border-radius: 50px;
         top: -30px;
         right: 20px;
     }
-    .addButton{
+
+    .addButton {
         width: 300px;
         height: auto;
     }
-    .designedAndDeveloped{
+
+    .designedAndDeveloped {
         text-align: center;
     }
+}
+
+/* Main Front End Page CSS  */
+.mainFrontPage {
+  z-index: -1;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  /* background-color: #f8f9fa; */
+  background-image: url("https://images.unsplash.com/photo-1565514158740-064f34bd6cfd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: transparent;
+}
+
+.chatBotMainContainer {
+  position: fixed;
+  right: 120px;
+  top: 170px;
+  height: 500px;
+  width: 400px;
+  z-index: 200;
+  opacity: 0;
+  /* Initially invisible */
+  transform: scale(0.8);
+  /* Initially scaled down */
+  animation: bounceIn 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+  /* Apply bounce animation */
+}
+
+/* Define the keyframes for the animation */
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+    /* Scale down initially */
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale(1.1);
+    /* Scale up slightly */
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    /* End at normal size */
+  }
+}
+
+
+.chatBotMainButton {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  /* border: 2px solid black; */
+  /* background-color: black; */
+  cursor: pointer;
+  z-index: 2000;
+}
+
+.botImage {
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+}
+
+.closeChatBox {
+  text-align: right;
+  /* padding: 20px; */
+  padding-right: 20px;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.chat-container {
+  /* max-width: 400px; */
+  margin: 0px auto;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  /* height: auto; */
+  /* width: auto; */
+}
+
+.chath2 {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.chat-window {
+  flex-grow: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+}
+
+.message {
+  margin: 10px 0;
+}
+
+.message.user {
+  text-align: right;
+}
+
+.message.user .bubble {
+  background: #4caf50;
+  color: white;
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 10px;
+  max-width: 70%;
+}
+
+.message.bot {
+  text-align: left;
+}
+
+.message.bot .bubble {
+  background: #eeeeee;
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 10px;
+  max-width: 70%;
+}
+
+.chat-input {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #dddddd;
+  background-color: #ffffff;
+}
+
+.chat-input input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 20px;
+  outline: none;
+}
+
+.chat-input button {
+  margin-left: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background-color: #45a049;
+}
+
+
+/* Responsive CSS for Tablets */
+@media (max-width: 768px) {
+  .mainFrontPage {
+    height: 80vh;
+    /* Adjust height for tablets */
+    background-size: cover;
+    /* Ensure background fits the container */
+    background-position: center;
+    /* Center align the background image */
+  }
+
+  .chatBotMainContainer {
+    right: 40px;
+    /* Move chatbot closer to the edge */
+    top: 120px;
+    /* Adjust vertical position */
+    height: 400px;
+    /* Reduce height for tablets */
+    width: 300px;
+    /* Reduce width for tablets */
+  }
+
+  .chatBotMainButton {
+    right: 20px;
+    /* Adjust position */
+    bottom: 30px;
+    /* Adjust position */
+    height: 45px;
+    /* Scale down size */
+    width: 45px;
+  }
+
+  .chat-container {
+    height: 400px;
+    /* Adjust height */
+  }
+
+  .chat-input input {
+    padding: 8px;
+    /* Reduce padding for smaller screens */
+  }
+
+  .chat-input button {
+    padding: 8px 12px;
+    /* Adjust button size */
+  }
+
+  .message .bubble {
+    font-size: 14px;
+    /* Reduce font size in chat bubbles */
+    padding: 6px 10px;
+    /* Adjust padding */
+  }
+
+  .closeChatBox {
+    text-align: right;
+    /* padding: 20px; */
+    padding-right: 20px;
+    padding-top: 10px;
+    cursor: pointer;
+  }
+}
+
+/* Responsive CSS for Mobile Devices */
+@media (max-width: 480px) {
+  .mainFrontPage {
+    height: 100vh;
+    /* Further reduce height for mobile */
+    background-size: cover;
+    background-position: center;
+  }
+
+  .chatBotMainContainer {
+    right: 50px;
+    top: 180px;
+    height: 350px;
+    width: 300px;
+  }
+
+  .chatBotMainButton {
+    right: 15px;
+    bottom: 20px;
+    height: 40px;
+    width: 40px;
+  }
+
+  .chat-container {
+    height: 400px;
+  }
+
+  .chath2 {
+    font-size: 16px;
+    /* Adjust header font size */
+    padding: 8px;
+    /* Reduce padding */
+  }
+
+  .chat-window {
+    padding: 8px;
+    /* Reduce padding */
+  }
+
+  .message .bubble {
+    font-size: 12px;
+    padding: 6px 8px;
+    max-width: 90%;
+  }
+
+  .chat-input {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .chat-input input {
+    display: flex;
+    margin-left: 0px;
+    padding: 6px;
+    font-size: 14px;
+  }
+
+  .chat-input button {
+    padding: 8px 10px;
+    font-size: 14px;
+    margin-right: 10px;
+    margin-left: 0px;
+  }
+
+  .closeChatBox {
+    text-align: right;
+    /* padding: 20px; */
+    padding-right: 20px;
+    padding-top: 10px;
+    font-size: 12px;
+    cursor: pointer;
+  }
 }

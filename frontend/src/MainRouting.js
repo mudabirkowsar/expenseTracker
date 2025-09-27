@@ -5,7 +5,8 @@ import MainFrontPage from './components/FrontPage/MainFrontPage'
 import Analysis from './components/Analysis/Analysis'
 import AddYourData from './components/AddYourData/AddYourData'
 import Dashboard from './components/Dashboard/Dashboard'
-import LoginNow from './components/ExtraComponents/LoginNow'
+import Login from './components/authscreens/Login'
+import Signup from './components/authscreens/Signup'
 
 function MainRouting() {
     return (
@@ -14,11 +15,11 @@ function MainRouting() {
                 <Routes>
                     <Route path='/' element={<Navbar />} >
                         <Route index element={<MainFrontPage />} />
-                        {/* <Route path='analysis' element={<Analysis/>}/> */}
-                        <Route path='dashboard' element={<Dashboard/>}/>
-                        <Route path='adddata' element={<AddYourData/>}/>
-                        <Route path='analyseYourData' element={<Analysis/>}/>
-                        <Route path='loginNow' element={<LoginNow/>}/>
+                        <Route path='dashboard' element={<Dashboard />} />
+                        <Route path='adddata' element={<AddYourData />} />
+                        <Route path='analyseYourData' element={<Analysis />} />
+                        <Route path='login' element={<Login/>} />
+                        <Route path ='signup' element={<Signup/>} />
                     </Route>
                 </Routes>
             </BrowserRouter>

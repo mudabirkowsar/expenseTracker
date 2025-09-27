@@ -32,7 +32,7 @@ const GOOGLE_KEY = process.env.GOOGLE_KEY
 const MONGODB_URL = process.env.MONGODB_URL
 
 
-const { GoogleGenerativeAI } = require("@google/generative-ai"); 
+const { GoogleGenerativeAI } = require("@google/generative-ai");
 const genAI = new GoogleGenerativeAI(GOOGLE_KEY);
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
@@ -40,8 +40,8 @@ mongoose.connect(CLOUD_MONGODB_URL)
     .then((res) => {
         console.log("Connected Successfully")
     })
-    .catch(err => { 
-        console.log("Error In connection") 
+    .catch(err => {
+        console.log("Error In connection")
     })
 
 
@@ -251,35 +251,39 @@ app.post("/chatBot", async (req, res) => {
     }
 })
 
-app.post("/chatWithBot", (req, res)=> {
+app.post("/chatWithBot", (req, res) => {
     // const question = "How do I add an expense?";
-    const {message} = req.body
-    if(!question){
+    const { message } = req.body
+    if (!question) {
         res.json({
-            status:500,
-            message:"Please provide a question",
+            status: 500,
+            message: "Please provide a question",
             success: false
         })
     }
     const chatResponse = chatbotData.find(
-        (chat)=> chat.question.toLowerCase() === question.toLowerCase()  
-    ); 
+        (chat) => chat.question.toLowerCase() === question.toLowerCase()
+    );
 
-    if(chatResponse){
+    if (chatResponse) {
         // console.log(chatResponse.reply)
         res.json({
-            status:200,
-            reply : chatResponse.reply,
+            status: 200,
+            reply: chatResponse.reply,
             success: true
         })
     }
-    else{
+    else {
         res.json({
-            status:500,
-            reply : "Sorry! I do not understand give me a proper question",
+            status: 500,
+            reply: "Sorry! I do not understand give me a proper question",
             success: false
         })
     }
+})
+
+app.get("/", (req, res)=> {
+    res.send("this is hell ")
 })
 
 app.listen(PORT, () => {
